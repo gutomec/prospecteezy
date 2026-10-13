@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>prospecteezy</title>
+    <meta name="description" content="Agente local de prospecção B2B: busca, enriquecimento e validação de leads." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script>
+      // Apply the saved/OS theme before first paint (no flash). Mirrors ThemeProvider.
+      (function () {
+        try {
+          var saved = localStorage.getItem("prospecteezy-theme");
+          var dark = saved === "dark" || (saved !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" src="./main.tsx"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>O prospecteezy precisa de JavaScript habilitado.</noscript>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+# Bun full-stack bundling for the React UI (src/client). The Tailwind plugin runs
+# whenever Bun.serve bundles an HTML import: on demand in development and lazily
+# on the first request in production (no separate build step).
+[serve.static]
+plugins = ["bun-plugin-tailwind"]
